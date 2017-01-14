@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root">
+    <ul>
+        <li v-for="name in names" v-text="name"></li>
+    </ul>
+
+    <input type="text">
+
+    <button>Add Name</button>
+</div>
+
+
+<script src="https://unpkg.com/vue@2.1.8/dist/vue.js"></script>
+
+
+<script>
+
+    new Vue({
+        el: '#root',
+        data: {
+            names: ['joe', 'dan', 'chelsea', 'Christos']
+        }
+    })
+
+</script>
+
+
+</body>
+</html>
